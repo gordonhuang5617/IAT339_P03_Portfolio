@@ -2,10 +2,17 @@
   STYLE GUIDE STYLING
   Default styling for the style guide
 */
-body {
-  font-family: helvetica;
-  padding: 2rem;
+
+* {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
 }
+
+
+body {
+  /*padding: 2rem;*/
+}
+
 
 section:not([id]) {
   margin: 1em 0;
@@ -136,6 +143,7 @@ section code {
 */
 
 /* Styling for the navigation */
+
 .nav{
   list-style-type: none;
   border: 1px solid #6dcff6;
@@ -252,7 +260,9 @@ section code {
   Other ELEMENTS for this page -------------------
 */
 
+
 /* Main Navigation and Branding */
+/*
 .main-nav {
   display: flex;
   flex-flow: row wrap;
@@ -282,6 +292,7 @@ section code {
   color: #f05b72;
 	background-color: rgba(255, 255, 255, 1);
 }
+*/
 
 .title {
   text-align: center;
@@ -316,4 +327,66 @@ section code {
 
 code {
   line-height: 2em;
+}
+
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background:  #f05b72;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav-container nav {
+  float: right;
+}
+
+.nav-container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-container nav li {
+  display: inline-block;
+  margin-left: 3em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.nav-container nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.nav-container nav a:hover {
+  color: #000;
+}
+
+.nav-container nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  with: 100%;
+  background-color: #444;
+  margin-top: 3em;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav-container nav a:hover::before {
+  width: 100%;
 }
