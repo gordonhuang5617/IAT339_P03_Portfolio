@@ -390,3 +390,8 @@ header::after {
 .nav-container nav a:hover::before {
   width: 100%;
 }
+
+img {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
