@@ -310,6 +310,11 @@ section code {
   color: white;
 }
 
+.imageLayout {
+  height: 50%;
+  width: 50%;
+}
+
 code {
   line-height: 2em;
 }
