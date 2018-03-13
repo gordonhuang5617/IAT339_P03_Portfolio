@@ -43,7 +43,7 @@ section code {
   display: inline-block;
   padding: 0.5em 0.75em;
   color: white;
-  background-color: #6dcff6;
+  background-color: #f05b72;
   text-align: center;
   border-radius: 0.25em;
   text-decoration: none;
@@ -55,12 +55,12 @@ section code {
 
 .button-nav:hover, .button-nav:focus {
   background-color: white;
-  color: #6dcff6;
+  color: #f05b72;
 }
 
 /* Styling for the intext link */
 .intext-link {
-  color: #6dcff6;
+  color: #f05b72;
   font-weight: bold;
 }
 
@@ -76,11 +76,13 @@ section code {
   background-color: white;
   border-radius: 0.5em;
   margin-top: 1em;
+  transition: all ease-in-out 300ms;
 }
 
 .submit:hover, .submit:focus {
   background-color: #f05b72;
   color: white;
+  transition: all ease-in-out 300ms;
 }
 
 /* Styling for the input fields */
@@ -100,7 +102,7 @@ section code {
 
 /* Styling for the 3 different headings */
 .heading h2{
-  color: #404040;
+  color: #f05b72;
   font-size: 1.8em;
 }
 
@@ -110,8 +112,9 @@ section code {
 }
 
 .heading h4 {
-  color: #6dcff6;
+  color: #f05b72;
   font-size: 1.2em;
+  font-weight: bold;
 }
 
 /* Styling for the paragraphs */
@@ -245,7 +248,7 @@ header::after {
   border: 1px solid white;
   flex: 1;
   color: white;
-  background-color: #8ad9bf;
+  background-color: #353535;
   height: 12rem;
 }
 
@@ -267,28 +270,18 @@ header::after {
 }
 
 .swatches1 {
-  background-color: #6dcff6;
+  background-color: #353535;
 }
 
 .swatches2 {
-  background-color: #8ad9bf;
+  background-color: #FFFFFF;
+  color: #353535;
 }
 
 .swatches3 {
   background-color: #f05b72;
 }
 
-.swatches4 {
-  background-color: #ca57a0;
-}
-
-.swatches5 {
-  background-color: #f68b1e;
-}
-
-.swatches6 {
-  background-color: #fdb92d;
-}
 
 .swatches1, .swatches2, .swatches3, .swatches4, .swatches5, .swatches6  p {
   text-align: center;
@@ -374,6 +367,8 @@ code {
 img {
   padding-top: 1em;
   padding-bottom: 1em;
+  width: 100%;
+  height: 100%;
 }
 
 #interactive_elements {
