@@ -229,21 +229,30 @@ header::after {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
     .childbox {
-        height: 90vh;
+        height: 110vh;
     }
     .childbox2 {
-        height: 90vh;
+        height: 110vh;
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 750px) {
     .childbox {
-        height: 60vh;
+        height: 130vh;
     }
     .childbox2 {
-        height: 60vh;
+        height: 130vh;
+    }
+}
+
+@media only screen and (max-width: 634px) {
+    .childbox {
+        height: 80vh;
+    }
+    .childbox2 {
+        height: 120vh;
     }
 }
 
