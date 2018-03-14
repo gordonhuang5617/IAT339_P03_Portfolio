@@ -13,6 +13,7 @@ h3 {
   font-weight: bold;
 }
 
+
 .home {
   background-color: #353535;
 }
@@ -111,9 +112,8 @@ header::after {
 }
 
 .main-content {
-
   flex: 1 1 100%;
-  min-height: 120vh;
+  min-height: 100vh;
 }
 
 .portfolio {
@@ -122,6 +122,10 @@ header::after {
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
 
+}
+
+.portfolio-projects h2 {
+  color: #353535;
 }
 
 .portfolio-item {
@@ -133,8 +137,8 @@ header::after {
 }
 
 .portfolio-item.tall {
-  grid-row: span 3;
-  grid-column: span 3;
+  grid-row: span 2;
+  grid-column: span 2;
 }
 
 .portfolio-item.gallery {
@@ -154,6 +158,12 @@ header::after {
   transition: all ease-in-out 300ms;
   position: relative;
   z-index: 10;
+  background-size: cover;
+  background-position: left;
+}
+
+.portfolio-item.tall.one:hover {
+  background-position: center;
 }
 
 
@@ -186,6 +196,11 @@ header::after {
   transition: all ease-in-out 300ms;
   position: relative;
   z-index: 10;
+  background-position: center;
+}
+
+.portfolio-item.tall.two:hover {
+  background-position: left;
 }
 
 
@@ -212,22 +227,21 @@ header::after {
 .flexbox {
   display: flex;
   flex: wrap;
-  min-width: 100%;
   margin-top: 2em;
 }
 
 .childbox {
   background-color: #f05b72;
   flex: 1;
-  min-width: 50%;
+  min-width: 5em;
   height: 600px;
   margin: 0 auto;
 }
 
 .childbox2{
   background-color: #FFFFFF;
-  flex: 1;
-  min-width: 50%;
+  flex: 2;
+  min-width: 5em;
   height: 600px;
   margin: 0 auto;
 }
@@ -235,11 +249,11 @@ header::after {
 .childbox h2 {
   text-align: center;
   color: #FFFFFF;
-  margin-top: 30%;
+  margin-top: 8em;
 }
 
 .childbox h4 {
   text-align: center;
   color: #FFFFFF;
-  margin-top: 30%;
+  margin-top: 5em;
 }
