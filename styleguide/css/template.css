@@ -216,7 +216,7 @@ header::after {
 .childbox {
   background-color: #f05b72;
   flex: 1;
-  min-width: 40rem;
+  min-width: 20rem;
   height: 60vh;
   margin: 0 auto;
 }
@@ -224,18 +224,12 @@ header::after {
 .childbox2{
   background-color: #FFFFFF;
   flex: 1;
-  min-width: 40rem;
+  min-width: 20rem;
   height: 60vh;
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 1280px) {
-=======
-
-
-@media only screen and (max-width: 1200px) {
->>>>>>> master
     .childbox {
         height: 110vh;
     }
@@ -275,7 +269,6 @@ header::after {
 }
 
 
-
 .portfolio-item.tall.three{
   background: url("../img/lattimergallery3.jpg");
   background-size: cover;
@@ -286,7 +279,6 @@ header::after {
   background-size: cover;
 }
 
-/*
 .portfolio-item.tall.five{
   background: url("../img/Storyboard.png");
   background-size: contain;
@@ -298,31 +290,11 @@ header::after {
   background-size: contain;
   background-color: #353535;
 }
-*/
 
 
 .process-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-}
-
-.storyboard1 {
-  flex: 1;
-  /*background: url("../img/Storyboard.png");
-  background-size: cover;*/
-  min-width: 20rem;
-  height: 50vh;
-}
-
-.storyboard2 {
-  flex: 1;
-/*  background: url("../img/Storyboard2.png");
-  background-size: cover;*/
-  min-width: 20rem;
-  height: 50vh;
+  flex: wrap;
 }
 
 .process-title {
@@ -336,7 +308,9 @@ header::after {
 .process{
   background-color: #FFFFFF;
   flex: 2;
-  min-width: 40em;
+  min-width: 5em;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .process h2 {
@@ -354,12 +328,10 @@ header::after {
 
 .process-content {
   margin: auto;
-  max-width: 80%;
+  width: 80%;
   color: #353535;
   line-height: 2em;
   margin-top: 5em;
-  min-width: 20rem;
-  height: auto;
 }
 
 .process-img {
@@ -373,8 +345,6 @@ header::after {
   flex: 1;
   background: url("../img/scene10.jpg");
   background-size: cover;
-  min-width: 40rem;
-  height: 60vh;
   margin: 0 auto;
 }
 
@@ -388,11 +358,6 @@ header::after {
   height: auto;
 }
 
-
-
-
-
-/* Homepage Projects */
 .project1 {
   background-color: #f05b72;
   flex: 1;
@@ -415,6 +380,7 @@ header::after {
 
 }
 
+
 .project2{
   text-decoration: none;
   background-color: #FFFFFF;
@@ -433,7 +399,6 @@ header::after {
   background-position: center;
   opacity: 0.5;
 }
-
 
 
 .project1:hover {
