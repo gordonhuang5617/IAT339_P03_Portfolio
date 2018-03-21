@@ -45,11 +45,6 @@ a {
   left: -50%;
 }
 
-header {
-/*  background:  #f05b72; */
-/*  background: url("../img/mov.png");
-  padding-bottom: 34em; */
-}
 
 header::after {
   content: '';
@@ -319,6 +314,9 @@ header::after {
     .process {
         height: 50rem;
     }
+    .process-img1 {
+      height: 50rem;
+    }
     .process-img2 {
       height: 50rem;
     }
@@ -327,6 +325,9 @@ header::after {
 @media only screen and (max-width: 1150px) {
     .process {
         height: 75rem;
+    }
+    .process-img1 {
+      height: 75rem;
     }
     .process-img2 {
       height: 75rem;
@@ -338,6 +339,9 @@ header::after {
     .process {
         height: auto;
     }
+    .process-img1 {
+      height: auto;
+    }
     .process-img2 {
       height: auto;
     }
@@ -348,7 +352,9 @@ header::after {
     .process {
       height: auto;
     }
-
+    .process-img1 {
+      height: auto;
+    }
     .process-img2 {
       height: auto;
     }
@@ -381,7 +387,7 @@ header::after {
   background: url("../img/mov.png");
   background-size: cover;
   min-width: 10rem;
-  height: 55rem;
+  height: 50rem;
   margin: 0 auto;
 }
 
@@ -480,4 +486,70 @@ video {
   min-width: 100%;
   overflow: hidden;
   z-index: -1;
+}
+
+.contact-container {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.fixer-contact {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+.contact {
+  margin-top: 2em;
+}
+
+.contact-title {
+  display: flex;
+  background-color: #353535;
+  color: #ffffff;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.contact ul{
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 5em;
+
+}
+
+.contact ul li {
+  list-style: none;
+  margin-right: 0.3rem;
+}
+
+.contact ul li a {
+  margin-right: 1em;
+  width: 5rem;
+  height: 5rem;
+  background: #f05b72;
+  text-align: center;
+  line-height: 4.5rem;
+  font-size: 35px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #f05b72;
+  z-index: 1;
+
+}
+
+.contact ul li a{
+  position: relative;
+  color: #FFFFFF;
+  transition: 1.0s;
+}
+
+.contact ul li a:hover{
+  color: #f05b72;
+  background-color: #ffffff;
+  transform: rotateY(360deg);
 }
