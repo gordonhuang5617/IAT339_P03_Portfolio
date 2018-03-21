@@ -317,10 +317,10 @@ header::after {
 
 @media only screen and (max-width: 1280px) {
     .process {
-        height: 55rem;
+        height: 50rem;
     }
     .process-img2 {
-      height: 55rem;
+      height: 50rem;
     }
 }
 
@@ -391,7 +391,7 @@ header::after {
   background-size: cover;
   margin: 0 auto;
   min-width: 10rem;
-  height: 55rem;
+  height: 50rem;
 }
 
 .project-container {
