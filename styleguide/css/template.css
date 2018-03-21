@@ -25,24 +25,6 @@ a {
 }
 */
 
-.home {
-  background-color: #353535;
-}
-
-
-.introduction {
-  background-color: #FFFFFF;
-  width: 100%;
-}
-
-.introduction-content {
-  margin: auto;
-  width: 80%;
-  color: #353535;
-  line-height: 2em;
-  margin-top: 15%;
-}
-
 
 
 .portfolio-projects {
@@ -134,71 +116,19 @@ header::after {
 
 }
 
-.portfolio-projects h2 {
-  color: #f05b72;
-}
-
 .portfolio-item {
   background-color: #f05b72;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
 }
 
-.portfolio-item.tall {
-  grid-row: span 4;
-  grid-column: span 2;
-}
-
-
-.portfolio-item.gallery {
-  background-color: #FFFFFF;
-}
-
-.portfolio-item.animation {
-  background-color: #353535;
-}
-
-.portfolio-item.tall.one {
-  background: url("../img/mov.png");
-  color: #c4c4c4;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-  background-size: cover;
-  background-position: top left;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  z-index: 10;
-  background-size: cover;
-  background-position: left;
-  opacity: 0.5;
-}
-
-.portfolio-item.tall.one:hover {
-  background-position: center;
-  opacity: 1;
+.portfolio-projects h2 {
+  color: #f05b72;
 }
 
 
-
-.portfolio-item.tall.two{
-  background: url("../img/cactusImage.jpg");
-  color: #c4c4c4;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-  background-size: cover;
-  background-position: top left;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  z-index: 10;
-  background-position: center;
-  opacity: 0.5;
-}
-
-.portfolio-item.tall.two:hover {
-  background-position: left;
-  opacity: 1;
-}
 
 
 
@@ -210,49 +140,78 @@ header::after {
   width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
-  height: auto;
 }
 
 .childbox {
   background-color: #f05b72;
   flex: 1;
   min-width: 20rem;
-  height: 60vh;
+  height: 30rem;
   margin: 0 auto;
 }
 
-.childbox2{
+.introduction {
   background-color: #FFFFFF;
   flex: 1;
   min-width: 20rem;
-  height: 60vh;
+  height: 30rem;
   margin: 0 auto;
 }
 
+.introduction-content {
+  margin: auto;
+  width: 80%;
+  color: #353535;
+  line-height: 2em;
+  margin-top: 5em;
+}
+
+
+
+
 @media only screen and (max-width: 1280px) {
     .childbox {
-        height: 110vh;
+        height: 40rem;
     }
-    .childbox2 {
-        height: 110vh;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    .childbox {
-        height: 130vh;
-    }
-    .childbox2 {
-        height: 130vh;
+    .introduction {
+      height: 40rem;
     }
 }
 
-@media only screen and (max-width: 634px) {
+@media only screen and (max-width: 1150px) {
     .childbox {
-        height: 80vh;
+        height: 50rem;
     }
-    .childbox2 {
-        height: 120vh;
+    .introduction {
+      height: 50rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .childbox {
+        height: 60rem;
+    }
+
+    .introduction {
+      height: 60rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .childbox {
+        height: 70rem;
+    }
+    .introduction {
+      height: 70rem;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .childbox {
+        height: 30rem;
+    }
+    .introduction {
+      height: auto;
     }
 }
 
@@ -269,46 +228,29 @@ header::after {
 }
 
 
-<<<<<<< HEAD
-=======
-/*
->>>>>>> master
-.portfolio-item.tall.three{
-  background: url("../img/lattimergallery3.jpg");
-  background-size: cover;
-}
-
-.portfolio-item.tall.four{
-  background: url("../img/lattimergallery4.jpg");
-  background-size: cover;
-}
-
-<<<<<<< HEAD
-=======
-
->>>>>>> master
-.portfolio-item.tall.five{
-  background: url("../img/Storyboard.png");
-  background-size: contain;
-  background-color: #353535;
-}
-
-.portfolio-item.tall.six{
-  background: url("../img/Storyboard2.png");
-  background-size: contain;
-  background-color: #353535;
-}
 
 
 .process-container {
   display: flex;
-<<<<<<< HEAD
   flex: wrap;
-=======
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
   height: auto;
+}
+
+.storyboardbox {
+  background-color: #f05b72;
+  flex: 1;
+  min-width: 20rem;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.storyboardbox h2 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 6em;
 }
 
 .storyboard1 {
@@ -321,7 +263,6 @@ header::after {
   flex: 1;
   min-width: 20rem;
   height: 50vh;
->>>>>>> master
 }
 
 
@@ -329,7 +270,7 @@ header::after {
 .filmbox {
   background-color: #353535;
   flex: 1;
-  min-width: 40rem;
+  min-width: 20rem;
   height: 60vh;
   margin: 0 auto;
 }
@@ -337,14 +278,14 @@ header::after {
 .filmbox h2 {
   text-align: center;
   color: #f05b72;
-  margin-top: 16rem;
+  margin-top: 6em;
 }
 
 .film1 {
   flex: 1;
   background: url("../img/lattimergallery3.jpg");
   background-size: cover;
-  min-width: 30rem;
+  min-width: 10rem;
   height: 60vh;
 }
 
@@ -352,7 +293,7 @@ header::after {
   flex: 1;
   background: url("../img/lattimergallery4.jpg");
   background-size: cover;
-  min-width: 30rem;
+  min-width: 10rem;
   height: 60vh;
 }
 
@@ -367,9 +308,50 @@ header::after {
 .process{
   background-color: #FFFFFF;
   flex: 2;
-  min-width: 5em;
-  height: 600px;
+  min-width: 40rem;
+  height: 50rem;
   margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .process {
+        height: 55rem;
+    }
+    .process-img2 {
+      height: 55rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .process {
+        height: 75rem;
+    }
+    .process-img2 {
+      height: 75rem;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .process {
+        height: auto;
+    }
+    .process-img2 {
+      height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 50rem) {
+    .process {
+      height: auto;
+    }
+
+    .process-img2 {
+      height: auto;
+    }
 }
 
 .process h2 {
@@ -391,14 +373,15 @@ header::after {
   color: #353535;
   line-height: 2em;
   margin-top: 5em;
+
 }
 
 .process-img {
   flex: 1;
   background: url("../img/mov.png");
   background-size: cover;
-  min-width: 40rem;
-  height: 60vh;
+  min-width: 10rem;
+  height: 55rem;
   margin: 0 auto;
 }
 
@@ -407,6 +390,8 @@ header::after {
   background: url("../img/scene10.jpg");
   background-size: cover;
   margin: 0 auto;
+  min-width: 10rem;
+  height: 55rem;
 }
 
 .project-container {
