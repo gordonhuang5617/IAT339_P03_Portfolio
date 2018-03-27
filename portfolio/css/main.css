@@ -1,0 +1,413 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+* {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+
+body {
+  /*padding: 2rem;*/
+}
+
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: white;
+  background-color: #f05b72;
+  text-align: center;
+  border-radius: 0.25em;
+  text-decoration: none;
+  margin-top: 1em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+
+.button-nav:hover, .button-nav:focus {
+  background-color: white;
+  color: #f05b72;
+}
+
+/* Styling for the intext link */
+.intext-link {
+  color: #f05b72;
+  font-weight: bold;
+}
+
+/* Styling for the submit buttons */
+.submit {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  text-decoration: none;
+  color: #f05b72;
+  background-color: white;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  transition: all ease-in-out 300ms;
+}
+
+.submit:hover, .submit:focus {
+  background-color: #f05b72;
+  color: white;
+  transition: all ease-in-out 300ms;
+}
+
+/* Styling for the input fields */
+.input-field {
+  padding: 0.5em 1em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin-top: 1em;
+}
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+/* Styling for the 3 different headings */
+.heading h2{
+  color: #f05b72;
+  font-size: 1.8em;
+}
+
+.heading h3 {
+  color: #353535;
+  font-size: 1.5em;
+}
+
+.heading h4 {
+  color: #f05b72;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Styling for the paragraphs */
+.paragraph {
+  text-align: left;
+  text-decoration: none;
+  line-height: 1.25;
+  color: #353535;
+}
+
+/* Styling for the bulleted lists */
+.blist {
+  list-style-type: circle;
+  color: #ca57a0;
+  line-height: 1.5em;
+}
+
+/* Styling for the numbered lists */
+.nlist {
+  color: #f68b1e;
+  line-height: 1.5em;
+}
+
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling for the navigation */
+.nav-container {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.fixer-container {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+header {
+/*  background:  #f05b72; */
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav-container nav {
+  float: left;
+}
+
+.nav-container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-container nav li {
+  display: inline-block;
+  margin-right: 3em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.nav-container nav a {
+  color: #f05b72;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.nav-container nav a:hover {
+  color: #353535;
+}
+
+.nav-container nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  with: 100%;
+  background-color: #353535;
+  margin-top: 4em;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav-container nav a:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+/* Styling for the product listing */
+.product-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.product-image img {
+  width: 15rem;
+  height: auto;
+  padding: 1rem;
+}
+
+.product-content {
+  width: 20rem;
+  height: auto;
+  padding: 1rem;
+}
+
+
+/* Styling for the grid structure */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.grid {
+  border: 1px solid white;
+  flex: 1;
+  color: white;
+  background-color: #353535;
+  height: 12rem;
+}
+
+.grid p {
+  text-align: center;
+}
+
+/* Styling for the colour swatches */
+.colour-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.swatches1, .swatches2, .swatches3, .swatches4, .swatches5, .swatches6 {
+  border: 1px solid white;
+  flex: 1;
+  color: white;
+  height: 12rem;
+}
+
+.swatches1 {
+  background-color: #353535;
+}
+
+.swatches2 {
+  background-color: #FFFFFF;
+  color: #353535;
+}
+
+.swatches3 {
+  background-color: #f05b72;
+}
+
+
+.swatches1, .swatches2, .swatches3, .swatches4, .swatches5, .swatches6  p {
+  text-align: center;
+  padding-top: 5em;
+  height: auto;
+}
+
+
+
+/*
+  Other ELEMENTS for this page -------------------
+*/
+
+
+/* Main Navigation and Branding */
+/*
+.main-nav {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 1em;
+}
+
+.main-nav nav {
+  clear: left;
+	width: 95.8%;
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	background-color: #f05b72;
+}
+
+.main-nav nav a {
+  display: inline-block;
+	text-decoration: none;
+	color: rgb(250, 250, 250);
+	padding-top: 1rem;
+	padding-bottom: 1.25rem;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.main-nav nav a:hover, nav a:focus, nav a:active {
+  color: #f05b72;
+	background-color: rgba(255, 255, 255, 1);
+}
+*/
+
+.title {
+  text-align: center;
+/*  background-color: #f05b72; */
+  color: #f05b72;
+  padding: 5em;
+}
+
+.section-nav {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #f05b72;
+  background-color: white;
+  text-align: center;
+  border-radius: 0.25em;
+  text-decoration: none;
+  margin-top: 1em;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+
+.section-nav:hover, .section-nav:focus {
+  background-color: #f05b72;
+  color: white;
+}
+
+.imageLayout {
+  height: 50%;
+  width: 50%;
+}
+
+code {
+  line-height: 2em;
+}
+
+img {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+#interactive_elements {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#text_elements {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#combined_elements {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#bio {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #333;
+}
+
+#documentary {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #333;
+}
+
+#documentary p {
+  margin-top: 2em;
+}
+
+#animation {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #333;
+}
+
+#animation p {
+  margin-top: 2em;
+}

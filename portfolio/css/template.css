@@ -1,0 +1,555 @@
+
+/* Portfolio Template */
+* {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #353535;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px
+}
+
+h3 {
+  font-weight: bold;
+}
+
+/*
+a {
+  text-decoration: none;
+  color:  #c4c4c4;
+}
+*/
+
+
+
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+
+.nav-container {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.fixer-container {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav-container nav {
+  float: left;
+}
+
+.nav-container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-container nav li {
+  display: inline-block;
+  margin-right: 3em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.nav-container nav a {
+  color: #f05b72;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.nav-container nav a:hover {
+  color: white;
+}
+
+.nav-container nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: white;
+  margin-top: 5em;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav-container nav a:hover::before {
+  width: 100%;
+}
+
+.main-content {
+  flex: 1 1 100%;
+  min-height: 50vh;
+}
+
+.portfolio {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+.portfolio-item {
+  background-color: #f05b72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.portfolio-projects h2 {
+  color: #f05b72;
+}
+
+
+
+
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.childbox {
+  background-color: #f05b72;
+  flex: 1;
+  min-width: 20rem;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+.introduction {
+  background-color: #FFFFFF;
+  flex: 1;
+  min-width: 20rem;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+.introduction-content {
+  margin: auto;
+  width: 80%;
+  color: #353535;
+  line-height: 2em;
+  margin-top: 5em;
+}
+
+
+
+
+@media only screen and (max-width: 1280px) {
+    .childbox {
+        height: 40rem;
+    }
+    .introduction {
+      height: 40rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .childbox {
+        height: 50rem;
+    }
+    .introduction {
+      height: 50rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .childbox {
+        height: 60rem;
+    }
+
+    .introduction {
+      height: 60rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .childbox {
+        height: 70rem;
+    }
+    .introduction {
+      height: 70rem;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .childbox {
+        height: 30rem;
+    }
+    .introduction {
+      height: auto;
+    }
+}
+
+.childbox h2 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 8em;
+}
+
+.childbox h4 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 5em;
+}
+
+
+
+
+.process-container {
+  display: flex;
+  flex: wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.storyboardbox {
+  background-color: #f05b72;
+  flex: 1;
+  min-width: 20rem;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.storyboardbox h2 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 6em;
+}
+
+.storyboard1 {
+  flex: 1;
+  min-width: 20rem;
+  height: 50vh;
+}
+
+.storyboard2 {
+  flex: 1;
+  min-width: 20rem;
+  height: 50vh;
+}
+
+
+
+.filmbox {
+  background-color: #353535;
+  flex: 1;
+  min-width: 20rem;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.filmbox h2 {
+  text-align: center;
+  color: #f05b72;
+  margin-top: 6em;
+}
+
+.film1 {
+  flex: 1;
+  background: url("../img/lattimergallery3.jpg");
+  background-size: cover;
+  min-width: 10rem;
+  height: 60vh;
+}
+
+.film2 {
+  flex: 1;
+  background: url("../img/lattimergallery4.jpg");
+  background-size: cover;
+  min-width: 10rem;
+  height: 60vh;
+}
+
+.process-title {
+  background-color: #353535;
+  flex: 1;
+  min-width: 5em;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.process{
+  background-color: #FFFFFF;
+  flex: 2;
+  min-width: 40rem;
+  height: 50rem;
+  margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .process {
+        height: 50rem;
+    }
+    .process-img1 {
+      height: 50rem;
+    }
+    .process-img2 {
+      height: 50rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .process {
+        height: 75rem;
+    }
+    .process-img1 {
+      height: 75rem;
+    }
+    .process-img2 {
+      height: 75rem;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .process {
+        height: auto;
+    }
+    .process-img1 {
+      height: auto;
+    }
+    .process-img2 {
+      height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 50rem) {
+    .process {
+      height: auto;
+    }
+    .process-img1 {
+      height: auto;
+    }
+    .process-img2 {
+      height: auto;
+    }
+}
+
+.process h2 {
+  color: #f05b72;
+}
+
+.process-title h4 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.process-introduction {
+  background-color: #FFFFFF;
+}
+
+.process-content {
+  margin: auto;
+  width: 80%;
+  color: #353535;
+  line-height: 2em;
+  margin-top: 5em;
+
+}
+
+.process-img {
+  flex: 1;
+  background: url("../img/mov.png");
+  background-size: cover;
+  min-width: 10rem;
+  height: 50rem;
+  margin: 0 auto;
+}
+
+.process-img2 {
+  flex: 1;
+  background: url("../img/scene10.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  min-width: 10rem;
+  height: 50rem;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+}
+
+.project1 {
+  background-color: #f05b72;
+  flex: 1;
+  min-width: 20rem;
+  height: 60vh;
+  margin: 0 auto;
+  background: url("../img/mov.png");
+  color: #c4c4c4;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+  background-size: cover;
+  background-position: left;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+
+.project2{
+  text-decoration: none;
+  background-color: #FFFFFF;
+  flex: 1;
+  min-width: 20rem;
+  height: 60vh;
+  margin: 0 auto;
+  background: url("../img/cactusImage.jpg");
+  color: #c4c4c4;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+  background-position: center;
+  opacity: 0.5;
+}
+
+
+.project1:hover {
+  background-position: center;
+  opacity: 1;
+  color: #FFFFFF;
+}
+
+.project2:hover {
+  background-position: left;
+  opacity: 1;
+  color: #FFFFFF;
+}
+
+.project-title {
+  display: flex;
+  background-color: #353535;
+  color: #f05b72;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* Video Header */
+#headerContent {
+  margin-top: 2em;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+video {
+  position: inherit;
+  min-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.contact-container {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.fixer-contact {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+.contact {
+  margin-top: 2em;
+}
+
+.contact-title {
+  display: flex;
+  background-color: #353535;
+  color: #ffffff;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.contact ul{
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 5em;
+
+}
+
+.contact ul li {
+  list-style: none;
+  margin-right: 0.3rem;
+}
+
+.contact ul li a {
+  margin-right: 1em;
+  width: 5rem;
+  height: 5rem;
+  background: #f05b72;
+  text-align: center;
+  line-height: 4.5rem;
+  font-size: 35px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #f05b72;
+  z-index: 1;
+
+}
+
+.contact ul li a{
+  position: relative;
+  color: #FFFFFF;
+  transition: 1.0s;
+}
+
+.contact ul li a:hover{
+  color: #f05b72;
+  background-color: #ffffff;
+  transform: rotateY(360deg);
+}
