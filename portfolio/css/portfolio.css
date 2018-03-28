@@ -18,12 +18,7 @@ h3 {
   font-weight: bold;
 }
 
-/*
-a {
-  text-decoration: none;
-  color:  #c4c4c4;
-}
-*/
+
 
 
 
@@ -33,17 +28,17 @@ a {
   font-size: 1.2rem;
 }
 
-.nav-container {
+/* .nav-container {
   float: left;
   position: relative;
   left: 50%;
-}
+} */
 
-.fixer-container {
+/* .fixer-container {
   float: left;
   position: relative;
   left: -50%;
-}
+} */
 
 
 header::after {
@@ -53,21 +48,28 @@ header::after {
 }
 
 .nav-container nav {
-  float: left;
+  display: block;
+  margin: 0 auto;
 }
 
 .nav-container nav ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
 .nav-container nav li {
   display: inline-block;
-  margin-right: 3em;
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
+  min-width: 10em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
 }
 
 .nav-container nav a {
@@ -75,13 +77,15 @@ header::after {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-container nav a:hover {
+.nav-container nav li a:hover {
   color: white;
 }
 
-.nav-container nav a::before {
+.nav-container nav li a::before {
   content: '';
   display: block;
   height: 3px;
@@ -94,8 +98,15 @@ header::after {
   transition: all ease-in-out 250ms;
 }
 
-.nav-container nav a:hover::before {
+.nav-container nav li a:hover::before {
   width: 100%;
+}
+
+.nav-container h3 {
+  color: white;
+  text-align: center;
+  margin: 1em;
+
 }
 
 .main-content {
@@ -124,16 +135,12 @@ header::after {
 }
 
 
-
-
-
 .flexbox {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
   flex-direction: row;
   width: 100%;
-  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -141,7 +148,7 @@ header::after {
   background-color: #f05b72;
   flex: 1;
   min-width: 20rem;
-  height: 30rem;
+  min-height: 40rem;
   margin: 0 auto;
 }
 
@@ -149,7 +156,7 @@ header::after {
   background-color: #FFFFFF;
   flex: 1;
   min-width: 20rem;
-  height: 30rem;
+  min-height: 40rem;
   margin: 0 auto;
 }
 
@@ -227,7 +234,6 @@ header::after {
 
 .process-container {
   display: flex;
-  flex: wrap;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
@@ -251,13 +257,28 @@ header::after {
 .storyboard1 {
   flex: 1;
   min-width: 20rem;
-  height: 50vh;
+  height: 60vh;
+  border: 1px solid #353535;
+  border-right-color: #f05b72;
+
+}
+
+.storyboard1 img {
+  height: 100%;
+  width: 100%;
 }
 
 .storyboard2 {
   flex: 1;
   min-width: 20rem;
-  height: 50vh;
+  height: 60vh;
+  border: 1px solid #353535;
+  border-left-color: #f05b72;
+}
+
+.storyboard2 img {
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -405,7 +426,6 @@ header::after {
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 100%;
-  justify-content: flex-start;
   align-items: flex-start;
   height: auto;
 }
@@ -414,7 +434,7 @@ header::after {
   background-color: #f05b72;
   flex: 1;
   min-width: 20rem;
-  height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   background: url("../img/mov.png");
   color: #c4c4c4;
@@ -429,7 +449,6 @@ header::after {
   opacity: 0.5;
   text-align: center;
   text-decoration: none;
-
 }
 
 
@@ -438,7 +457,7 @@ header::after {
   background-color: #FFFFFF;
   flex: 1;
   min-width: 20rem;
-  height: 60vh;
+  min-height: 80vh;
   margin: 0 auto;
   background: url("../img/cactusImage.jpg");
   color: #c4c4c4;
