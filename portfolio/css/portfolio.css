@@ -109,15 +109,16 @@ header::after {
   width: 100%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 910px) {
   label {
     display: block;
     cursor: pointer;
   }
   .nav-container {
     text-align: center;
-    width: 100%;
+    width: 70%;
     display: none;
+    margin: 0 auto;
   }
 
   .nav-container a {
