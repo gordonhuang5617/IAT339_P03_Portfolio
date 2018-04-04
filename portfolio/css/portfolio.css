@@ -147,7 +147,7 @@ header::after {
 }
 
 
-.banner h3 {
+.banner h2 {
   color: white;
   text-align: center;
   margin: 1em;
@@ -183,7 +183,6 @@ header::after {
 .flexbox {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
   flex-direction: row;
   width: 100%;
   align-items: flex-start;
