@@ -43,7 +43,7 @@ section code {
   display: inline-block;
   padding: 0.5em 0.75em;
   color: white;
-  background-color: #f05b72;
+  background-color: #88BBD6;
   text-align: center;
   border-radius: 0.25em;
   text-decoration: none;
@@ -55,12 +55,12 @@ section code {
 
 .button-nav:hover, .button-nav:focus {
   background-color: white;
-  color: #f05b72;
+  color: #88BBD6;
 }
 
 /* Styling for the intext link */
 .intext-link {
-  color: #f05b72;
+  color: #88BBD6;
   font-weight: bold;
 }
 
@@ -72,7 +72,7 @@ section code {
   border-width: 2px;
   text-align: center;
   text-decoration: none;
-  color: #f05b72;
+  color: #88BBD6;
   background-color: white;
   border-radius: 0.5em;
   margin-top: 1em;
@@ -80,7 +80,7 @@ section code {
 }
 
 .submit:hover, .submit:focus {
-  background-color: #f05b72;
+  background-color: #88BBD6;
   color: white;
   transition: all ease-in-out 300ms;
 }
@@ -102,7 +102,7 @@ section code {
 
 /* Styling for the 3 different headings */
 .heading h2{
-  color: #f05b72;
+  color: #88BBD6;
   font-size: 1.8em;
 }
 
@@ -112,7 +112,7 @@ section code {
 }
 
 .heading h4 {
-  color: #f05b72;
+  color: #88BBD6;
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -187,7 +187,7 @@ header::after {
 }
 
 .nav-container nav a {
-  color: #f05b72;
+  color: #88BBD6;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
@@ -208,7 +208,7 @@ header::after {
   position: absolute;
   top: 0;
   width: 0%;
-  transition: all ease-in-out 250ms;
+  transition: all ease-in-out 125ms;
 }
 
 .nav-container nav a:hover::before {
@@ -279,7 +279,7 @@ header::after {
 }
 
 .swatches3 {
-  background-color: #f05b72;
+  background-color: #88BBD6;
 }
 
 
@@ -332,14 +332,14 @@ header::after {
 .title {
   text-align: center;
 /*  background-color: #f05b72; */
-  color: #f05b72;
+  color: #88BBD6;
   padding: 5em;
 }
 
 .section-nav {
   display: inline-block;
   padding: 0.5em 0.75em;
-  color: #f05b72;
+  color: #88BBD6;
   background-color: white;
   text-align: center;
   border-radius: 0.25em;
@@ -351,7 +351,7 @@ header::after {
 
 
 .section-nav:hover, .section-nav:focus {
-  background-color: #f05b72;
+  background-color: #88BBD6;
   color: white;
 }
 

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #353535;
+  background-color: #292929;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -80,7 +80,7 @@ header::after {
 
 
 .nav-container nav a {
-  color: #f05b72;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
@@ -89,7 +89,7 @@ header::after {
 }
 
 .nav-container nav li a:hover {
-  color: white;
+  color: #88BBD6;
 }
 
 .nav-container nav li a::before {
@@ -131,13 +131,13 @@ header::after {
     content: '';
     display: block;
     height: 3px;
-    background-color: #353535;
+    background-color: #292929;
     margin-top: 5em;
 
     position: absolute;
     top: 0;
     width: 0%;
-    transition: all ease-in-out 250ms;
+    transition: all ease-in-out 125ms;
   }
 
   #toggle:checked + .nav-container {
@@ -168,7 +168,7 @@ header::after {
 }
 
 .portfolio-item {
-  background-color: #f05b72;
+  background-color: #88BBD6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,7 +176,7 @@ header::after {
 }
 
 .portfolio-projects h2 {
-  color: #f05b72;
+  color: #328cc1;
 }
 
 
@@ -186,21 +186,23 @@ header::after {
   flex-direction: row;
   width: 100%;
   align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  background-color: #88BBD6;
 }
 
 .childbox {
-  background-color: #f05b72;
+  background-color: #88BBD6;
   flex: 1;
-  min-width: 20rem;
-  min-height: 40rem;
+  min-width: 30rem;
   margin: 0 auto;
+
 }
 
 .introduction {
   background-color: #FFFFFF;
   flex: 1;
   min-width: 20rem;
-  min-height: 40rem;
   margin: 0 auto;
 }
 
@@ -209,7 +211,8 @@ header::after {
   width: 80%;
   color: #353535;
   line-height: 2em;
-  margin-top: 5em;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 
@@ -217,44 +220,44 @@ header::after {
 
 @media only screen and (max-width: 1280px) {
     .childbox {
-        height: 40rem;
+        height: auto;
     }
     .introduction {
-      height: 40rem;
+      height: auto;
     }
 }
 
 @media only screen and (max-width: 1150px) {
     .childbox {
-        height: 50rem;
+        height: auto;
     }
     .introduction {
-      height: 50rem;
+      height: auto;
     }
 }
 
 @media only screen and (max-width: 800px) {
     .childbox {
-        height: 60rem;
+        height: auto;
     }
 
     .introduction {
-      height: 60rem;
+      height: auto;
     }
 }
 
 @media only screen and (max-width: 700px) {
     .childbox {
-        height: 70rem;
+        height: auto;
     }
     .introduction {
-      height: 70rem;
+      height: auto;
     }
 }
 
 @media only screen and (max-width: 40rem) {
     .childbox {
-        height: 30rem;
+        height: auto;
     }
     .introduction {
       height: auto;
@@ -264,13 +267,11 @@ header::after {
 .childbox h2 {
   text-align: center;
   color: #FFFFFF;
-  margin-top: 8em;
 }
 
 .childbox h4 {
   text-align: center;
   color: #FFFFFF;
-  margin-top: 5em;
 }
 
 
@@ -281,29 +282,31 @@ header::after {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .storyboardbox {
-  background-color: #f05b72;
+  background-color: #292929;
   flex: 1;
   min-width: 20rem;
-  height: 60vh;
   margin: 0 auto;
+  height: auto;
 }
 
 .storyboardbox h2 {
   text-align: center;
   color: #FFFFFF;
-  margin-top: 6em;
 }
 
 .storyboard1 {
   flex: 1;
   min-width: 20rem;
   height: 60vh;
-  border: 1px solid #353535;
-  border-right-color: #f05b72;
+  border: 1px solid #292929;
+  border-right-color: #88BBD6;
+  border-left-color: #88BBD6;
 
 }
 
@@ -316,8 +319,9 @@ header::after {
   flex: 1;
   min-width: 20rem;
   height: 60vh;
-  border: 1px solid #353535;
-  border-left-color: #f05b72;
+  border: 1px solid #292929;
+  border-left-color: #88BBD6;
+  border-right-color: #88BBD6;
 }
 
 .storyboard2 img {
@@ -328,17 +332,19 @@ header::after {
 
 
 .filmbox {
-  background-color: #353535;
+  background-color: #292929;
   flex: 1;
   min-width: 20rem;
-  height: 60vh;
   margin: 0 auto;
+  height: auto;
+
+
 }
 
 .filmbox h2 {
   text-align: center;
-  color: #f05b72;
-  margin-top: 6em;
+  color: #88BBD6;
+  min-width: 20rem;
 }
 
 .film1 {
@@ -346,7 +352,7 @@ header::after {
   background: url("../img/lattimergallery3.jpg");
   background-size: cover;
   min-width: 10rem;
-  height: 60vh;
+  height: 50vh;
 }
 
 .film2 {
@@ -354,7 +360,7 @@ header::after {
   background: url("../img/lattimergallery4.jpg");
   background-size: cover;
   min-width: 10rem;
-  height: 60vh;
+  height: 50vh;
 }
 
 .process-title {
@@ -426,7 +432,7 @@ header::after {
 }
 
 .process h2 {
-  color: #f05b72;
+  color: #88BBD6;
 }
 
 .process-title h4 {
@@ -447,11 +453,11 @@ header::after {
 
 }
 
-.process-img {
+.process-img1 {
   flex: 1;
   background: url("../img/mov.png");
   background-size: cover;
-  min-width: 10rem;
+  min-width: 20rem;
   height: 50rem;
   margin: 0 auto;
 }
@@ -475,10 +481,11 @@ header::after {
 }
 
 .project1 {
+  border: 2px solid #292929;
   background-color: #f05b72;
   flex: 1;
   min-width: 20rem;
-  min-height: 80vh;
+  min-height: 45vh;
   margin: 0 auto;
   background: url("../img/mov.png");
   color: #c4c4c4;
@@ -497,11 +504,12 @@ header::after {
 
 
 .project2{
+  border: 2px solid #292929;
   text-decoration: none;
   background-color: #FFFFFF;
   flex: 1;
   min-width: 20rem;
-  min-height: 80vh;
+  min-height: 45vh;
   margin: 0 auto;
   background: url("../img/cactusImage.jpg");
   color: #c4c4c4;
@@ -516,6 +524,7 @@ header::after {
 }
 
 
+
 .project1:hover {
   background-position: center;
   opacity: 1;
@@ -528,18 +537,122 @@ header::after {
   color: #FFFFFF;
 }
 
+
+.project3{
+  border: 2px solid #292929;
+  text-decoration: none;
+  background-color: #545454;
+  flex: 1;
+  min-width: 20rem;
+  min-height: 45vh;
+  margin: 0 auto;
+  color: #c4c4c4;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.project3:hover {
+  background-position: left;
+  opacity: 1;
+  color: #909090;
+}
+
+.project4{
+  border: 2px solid #292929;
+  text-decoration: none;
+  background-color: #545454;
+  flex: 3;
+  min-width: 20rem;
+  min-height: 45vh;
+  margin: 0 auto;
+  color: #c4c4c4;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.project4:hover {
+  background-position: left;
+  opacity: 1;
+  color: #909090;
+}
+
+.project5{
+  border: 2px solid #292929;
+  text-decoration: none;
+  background-color: #545454;
+  flex: 2;
+  min-width: 20rem;
+  min-height: 45vh;
+  margin: 0 auto;
+  color: #c4c4c4;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.project5:hover {
+  background-position: left;
+  opacity: 1;
+  color: #909090;
+}
+
+.project6{
+  border: 2px solid #292929;
+  text-decoration: none;
+  background-color: #545454;
+  flex: 1;
+  min-width: 20rem;
+  min-height: 45vh;
+  margin: 0 auto;
+  color: #c4c4c4;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.project6:hover {
+  background-position: left;
+  opacity: 1;
+  color: #909090;
+}
+
+
 .project-title {
   display: flex;
-  background-color: #353535;
-  color: #f05b72;
+  background-color: #292929;
+  color: #88BBD6;
   justify-content: center;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin-top: 5em;
 }
+
 
 /* Video Header */
 #headerContent {
-  margin-top: 2em;
+  margin-top: 1em;
   width: 100%;
   height: 80%;
   overflow: hidden;
@@ -569,7 +682,7 @@ video {
 
 .contact-title {
   display: flex;
-  background-color: #353535;
+  background-color: #292929;
   color: #ffffff;
   justify-content: center;
   padding-top: 1em;
@@ -592,7 +705,7 @@ video {
   margin-right: 1em;
   width: 5rem;
   height: 5rem;
-  background: #f05b72;
+  background: #88BBD6;
   text-align: center;
   line-height: 4.5rem;
   font-size: 35px;
@@ -600,7 +713,7 @@ video {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  border: 3px solid #f05b72;
+  border: 3px solid #88BBD6;
   z-index: 1;
 
 }
@@ -612,7 +725,7 @@ video {
 }
 
 .contact ul li a:hover{
-  color: #f05b72;
+  color: #88BBD6;
   background-color: #ffffff;
   transform: rotateY(360deg);
 }
