@@ -1,9 +1,9 @@
 
 /* Portfolio Template */
 * {
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif; */
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  box-sizing: border-box;
 }
 
 body {
@@ -11,15 +11,14 @@ body {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  margin-left: 0px
+  margin-left: 0px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h3 {
   font-weight: bold;
 }
-
-
-
 
 
 .portfolio-projects {
@@ -58,6 +57,14 @@ header::after {
   margin: 0 auto;
 }
 
+.home {
+  float: left;
+}
+
+.nav-element {
+  float: right;
+}
+
 .nav-container nav ul {
   margin: 0 auto;
   padding: 0;
@@ -76,6 +83,7 @@ header::after {
   margin-top: 1em;
   margin-bottom: 1em;
 
+
 }
 
 
@@ -88,11 +96,19 @@ header::after {
   margin: 0;
 }
 
-.nav-container nav li a:hover {
+#active a{
   color: #88BBD6;
 }
 
-.nav-container nav li a::before {
+#active a:hover {
+  color: #FFFFFF;
+}
+
+.nav-container nav li:not(#active) a:hover {
+  color: #88BBD6;
+}
+
+.nav-container nav li:not(#active) a::before {
   content: '';
   display: block;
   height: 3px;
@@ -105,7 +121,7 @@ header::after {
   transition: all ease-in-out 250ms;
 }
 
-.nav-container nav li a:hover::before {
+.nav-container nav li:not(#active) a:hover::before {
   width: 100%;
 }
 
@@ -147,10 +163,12 @@ header::after {
 }
 
 
-.banner h2 {
-  color: white;
-  text-align: center;
-  margin: 1em;
+.banner img {
+  width: 43.5%;
+  height: 43.5%;
+  margin: auto;
+  display: block;
+  background-image: fixed;
 
 }
 
@@ -227,42 +245,7 @@ header::after {
     }
 }
 
-@media only screen and (max-width: 1150px) {
-    .childbox {
-        height: auto;
-    }
-    .introduction {
-      height: auto;
-    }
-}
 
-@media only screen and (max-width: 800px) {
-    .childbox {
-        height: auto;
-    }
-
-    .introduction {
-      height: auto;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .childbox {
-        height: auto;
-    }
-    .introduction {
-      height: auto;
-    }
-}
-
-@media only screen and (max-width: 40rem) {
-    .childbox {
-        height: auto;
-    }
-    .introduction {
-      height: auto;
-    }
-}
 
 .childbox h2 {
   text-align: center;
@@ -274,10 +257,16 @@ header::after {
   color: #FFFFFF;
 }
 
+.film-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-.process-container {
+.storyboard-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -287,12 +276,21 @@ header::after {
 }
 
 
+.process-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+
+}
+
+
 .storyboardbox {
   background-color: #292929;
   flex: 1;
-  min-width: 20rem;
+  min-width: 30rem;
   margin: 0 auto;
-  height: auto;
 }
 
 .storyboardbox h2 {
@@ -302,8 +300,8 @@ header::after {
 
 .storyboard1 {
   flex: 1;
-  min-width: 20rem;
-  height: 60vh;
+  min-width: 25rem;
+  height: 50vh;
   border: 1px solid #292929;
   border-right-color: #88BBD6;
   border-left-color: #88BBD6;
@@ -317,8 +315,8 @@ header::after {
 
 .storyboard2 {
   flex: 1;
-  min-width: 20rem;
-  height: 60vh;
+  min-width: 25rem;
+  height: 50vh;
   border: 1px solid #292929;
   border-left-color: #88BBD6;
   border-right-color: #88BBD6;
@@ -336,7 +334,6 @@ header::after {
   flex: 1;
   min-width: 20rem;
   margin: 0 auto;
-  height: auto;
 
 
 }
@@ -351,7 +348,7 @@ header::after {
   flex: 1;
   background: url("../img/lattimergallery3.jpg");
   background-size: cover;
-  min-width: 10rem;
+  min-width: 20rem;
   height: 50vh;
 }
 
@@ -359,7 +356,7 @@ header::after {
   flex: 1;
   background: url("../img/lattimergallery4.jpg");
   background-size: cover;
-  min-width: 10rem;
+  min-width: 20rem;
   height: 50vh;
 }
 
@@ -375,61 +372,10 @@ header::after {
   background-color: #FFFFFF;
   flex: 2;
   min-width: 40rem;
-  height: 50rem;
   margin: 0 auto;
 }
 
 
-
-@media only screen and (max-width: 1280px) {
-    .process {
-        height: 50rem;
-    }
-    .process-img1 {
-      height: 50rem;
-    }
-    .process-img2 {
-      height: 50rem;
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-    .process {
-        height: 75rem;
-    }
-    .process-img1 {
-      height: 75rem;
-    }
-    .process-img2 {
-      height: 75rem;
-    }
-}
-
-
-@media only screen and (max-width: 1000px) {
-    .process {
-        height: auto;
-    }
-    .process-img1 {
-      height: auto;
-    }
-    .process-img2 {
-      height: auto;
-    }
-}
-
-
-@media only screen and (max-width: 50rem) {
-    .process {
-      height: auto;
-    }
-    .process-img1 {
-      height: auto;
-    }
-    .process-img2 {
-      height: auto;
-    }
-}
 
 .process h2 {
   color: #88BBD6;
@@ -442,6 +388,9 @@ header::after {
 
 .process-introduction {
   background-color: #FFFFFF;
+  flex: 1;
+  min-width: 20rem;
+  margin: 0 auto;
 }
 
 .process-content {
@@ -449,16 +398,19 @@ header::after {
   width: 80%;
   color: #353535;
   line-height: 2em;
-  margin-top: 5em;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 31.5rem;
 
 }
+
 
 .process-img1 {
   flex: 1;
   background: url("../img/mov.png");
   background-size: cover;
   min-width: 20rem;
-  height: 50rem;
+  min-height: 43.5rem;
   margin: 0 auto;
 }
 
@@ -466,9 +418,9 @@ header::after {
   flex: 1;
   background: url("../img/scene10.jpg");
   background-size: cover;
+  min-width: 20rem;
+  min-height: 43.5rem;
   margin: 0 auto;
-  min-width: 10rem;
-  height: 50rem;
 }
 
 .project-container {
@@ -707,7 +659,7 @@ video {
   height: 5rem;
   background: #88BBD6;
   text-align: center;
-  line-height: 4.5rem;
+  line-height: 5rem;
   font-size: 35px;
   display: block;
   border-radius: 50%;
