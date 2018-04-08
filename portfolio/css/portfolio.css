@@ -299,31 +299,39 @@ header::after {
 
 .storyboard1 {
   flex: 1;
-  min-width: 25rem;
+  min-width: 20rem;
   height: 50vh;
   border: 1px solid #292929;
   border-right-color: #88BBD6;
   border-left-color: #88BBD6;
+  background: url("../img/Storyboard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
 
-.storyboard1 img {
-  height: 100%;
-  width: 100%;
-}
 
 .storyboard2 {
   flex: 1;
-  min-width: 25rem;
+  min-width: 20rem;
   height: 50vh;
   border: 1px solid #292929;
   border-left-color: #88BBD6;
   border-right-color: #88BBD6;
+  background: url("../img/Storyboard2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.storyboard2 img {
-  height: 100%;
-  width: 100%;
+@media only screen and (max-width: 1180px) {
+  .storyboard1 {
+    min-width: 50rem;
+  }
+  .storyboard2 {
+    min-width: 50rem;
+  }
 }
 
 
