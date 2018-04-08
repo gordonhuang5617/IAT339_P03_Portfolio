@@ -143,7 +143,7 @@ header::after {
     border-bottom: 1px solid #EAEAFB;
   }
 
-  .nav-container nav li a::before {
+  .nav-container nav li:not(#active) a::before {
     content: '';
     display: block;
     height: 3px;
@@ -168,7 +168,6 @@ header::after {
   height: 43.5%;
   margin: auto;
   display: block;
-  background-image: fixed;
 
 }
 
@@ -616,29 +615,35 @@ video {
   z-index: -1;
 }
 
-.contact-container {
-  float: left;
-  position: relative;
-  left: 50%;
+iframe {
+  min-width: 100%;
+  height: 100vh;
+  border: 0;
 }
 
-.fixer-contact {
-  float: left;
-  position: relative;
-  left: -50%;
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #292929;
+  margin: 5rem 0;
+
 }
+
 
 .contact {
   margin-top: 2em;
 }
 
 .contact-title {
-  display: flex;
   background-color: #292929;
   color: #ffffff;
   justify-content: center;
   padding-top: 1em;
   padding-bottom: 1em;
+  text-align: center;
 }
 
 .contact ul{
@@ -650,7 +655,6 @@ video {
 
 .contact ul li {
   list-style: none;
-  margin-right: 0.3rem;
 }
 
 .contact ul li a {
@@ -680,4 +684,74 @@ video {
   color: #88BBD6;
   background-color: #ffffff;
   transform: rotateY(360deg);
+}
+
+
+/*---footer------*/
+footer {
+  width: 100%;
+  background-color: #222;
+  padding: 5rem 0px;
+}
+
+footer nav {
+  float: left;
+}
+
+footer nav ul {
+}
+
+footer nav ul li {
+  list-style: none;
+  margin-left: 2rem;
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer nav ul li a:hover {
+  color: #88BBD6;
+}
+
+.wrapper p {
+  clear: both;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+
+.reference {
+  float: right;
+  margin-right: 3rem;
+  width: 200px;
+}
+
+.reference ul li {
+  list-style: none;
+  margin-left: 2rem;
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
+.reference ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.reference ul li a:hover {
+  color: #88BBD6;
+}
+
+
+/*---------References-------*/
+.heading {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5rem;
 }
