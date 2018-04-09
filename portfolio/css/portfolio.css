@@ -265,6 +265,7 @@ header::after {
   align-items: center;
 }
 
+
 .storyboard-container {
   display: flex;
   flex-wrap: wrap;
@@ -367,6 +368,7 @@ header::after {
   height: 50vh;
 }
 
+
 .process-title {
   background-color: #353535;
   flex: 1;
@@ -410,6 +412,33 @@ header::after {
   min-height: 31.5rem;
 
 }
+
+
+.iland-process-introduction {
+  background-color: #FFFFFF;
+  flex: 1;
+  min-width: 20rem;
+  margin: 0 auto;
+}
+
+.iland-process-content {
+  margin: auto;
+  width: 80%;
+  color: #353535;
+  line-height: 2em;
+  padding-top: 6rem;
+  min-height: 31.5rem;
+}
+
+.iland-process-img1 {
+  flex: 1;
+  background: url("../img/mov.png");
+  background-size: cover;
+  min-width: 20rem;
+  min-height: 43.5rem;
+  margin: 0 auto;
+}
+
 
 
 .process-img1 {
@@ -500,11 +529,12 @@ header::after {
 .project3{
   border: 2px solid #292929;
   text-decoration: none;
-  background-color: #545454;
+  background-color: #FFFFFF;
   flex: 1;
   min-width: 20rem;
   min-height: 45vh;
   margin: 0 auto;
+  background: url("../img/ilandintro.png");
   color: #c4c4c4;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
   background-size: cover;
@@ -512,14 +542,14 @@ header::after {
   transition: all ease-in-out 300ms;
   position: relative;
   z-index: 10;
-  background-position: center;
+  background-position: 75% 75%;
   opacity: 0.5;
 }
 
 .project3:hover {
-  background-position: left;
+  background-position: center;
   opacity: 1;
-  color: #909090;
+  color: #FFFFFF;
 }
 
 .project4{
@@ -762,4 +792,114 @@ footer nav ul li a:hover {
   width: 90%;
   margin: 0 auto;
   line-height: 1.5rem;
+}
+
+
+
+/*-------I-Land Project ----------*/
+
+.iland-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ilandbox {
+  background-color: #292929;
+  flex: 1;
+  min-width: 20rem;
+  margin: 0 auto;
+
+
+}
+
+.ilandbox h2 {
+  text-align: center;
+  color: #88BBD6;
+  min-width: 20rem;
+}
+
+.iland1 {
+  flex: 1;
+  background: url("../img/Island Map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0.5rem solid #292929;
+  min-width: 20rem;
+  height: 50vh;
+}
+
+.iland2 {
+  border: 0.5rem solid #292929;
+  flex: 1;
+  background: url("../img/Island Map 2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 20rem;
+  height: 50vh;
+}
+
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#beach {
+  margin: 0.5em;
+  flex: 1;
+  width: 25%;
+  height: 25%;
+}
+
+#ice {
+  margin: 0.5em;
+  flex: 1;
+  width: 25%;
+  height: 25%;
+}
+
+#lava {
+  margin: 0.5em;
+  flex: 1;
+  width: 25%;
+  height: 25%;
+}
+
+#start {
+  margin: 0.5em;
+  flex: 1;
+  width: 25%;
+  height: 25%;
+}
+
+
+#how {
+  margin: 0.5em;
+  flex: 1;
+  width: 25%;
+  height: 25%;
+}
+
+#gameplay1 {
+  margin: 0.5em;
+  flex: 1;
+  width: 25%;
+  height: 25%;
+}
+
+#gameplay2 {
+  margin: 0.5em;
+  flex: 1;
+  width: 25%;
+  height: 25%;
+  padding-bottom: 5em;
 }
